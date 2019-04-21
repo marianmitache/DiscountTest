@@ -14,7 +14,7 @@ class GiftType implements TypeInterface {
         $data['items'][$item]['quantity'] = (string) ($data['items'][$item]['quantity'] + $freeQuantity);
         $data['items'][$item]['total'] = (string)($data['items'][$item]['quantity'] * $data['items'][$item]['unit-price']);
         $data['discount'] += $freeQuantity * $data['items'][$item]['unit-price'];
-        array_push($data['discount_reasons'], 'over 5 Switchs products');
+        array_push($data['discount_reasons'], 'Gift Discount');
 
         return $data;
     }
